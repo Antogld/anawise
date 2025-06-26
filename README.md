@@ -93,7 +93,7 @@
   > "Torna a scuola, poi ricominci a commentare"
   > "Questo utente ha confuso Facebook con Wikipedia"
 
-### 🧠 Esempi di risposte pungenti e divertenti
+### 🧠 Esempi di risposte del sistema
 
 - "Questo commento è stato sostituito per motivi educativi. No, il 5G non ti legge il pensiero."
 - "Siamo nel 2025, ma il cervello è rimasto al Medioevo."
@@ -125,7 +125,7 @@
 
 → Ottengono un punteggio interno → profilazione
 
-### 🧩 2. Interfaccia ironica del profilo bloccato
+### 🧩 2. Interfaccia del profilo bloccato
 
 - Il profilo è oscurato e mostra:
 
