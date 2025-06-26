@@ -102,6 +102,16 @@
 - "Abbiamo verificato: questo utente ha bisogno di un abbonamento alla realtà."
 - "Hai sbloccato il badge 'Teoria del Microonde Quantistico'. Complimenti."
 - "Il tuo commento è stato sospeso. Non per censura, per compassione."
+- "Questo commento è stato sostituito da un messaggio con almeno un neurone attivo."
+- "Trova un libro, leggilo, poi riprova."
+- "La scienza non ha bisogno della tua opinione, ma tu hai bisogno di un ripasso."
+- "Il commento originale è in pausa... come il buon senso di chi l'ha scritto."
+- "Questo spazio è stato bonificato dalla disinformazione. Prego."
+- "Complotti non trovati. Solo errori di logica."
+- "Testo rimosso per motivi di salute mentale collettiva."
+- "Il commento è stato convertito in un sorriso sarcastico."
+- "Abbiamo fatto fact-checking. Il commento ha perso 3 a 0."
+- e tanti altri...
 
 ---
 
@@ -126,6 +136,22 @@
   > "Utente in modalità silenziosa: il cervello sta facendo reboot."
 
   > "Tutti i contenuti sono attualmente in quarantena cognitiva."
+  
+  > "Profilo momentaneamente disattivato: l’utente ha confuso Google con una laurea."
+  
+  > "Offline finché non trova il confine del mondo piatto."
+  
+  > "Utente in quarantena da bufale. Speriamo torni vaccinato…"
+  
+  > "Profilo sospeso. È stato avvistato a cercare le scie chimiche con un binocolo."
+  
+  > "In pausa. Sta ancora cercando ‘la verità’ su un blog del 2006."
+  
+  > "Questo profilo è temporaneamente assente: sta decifrando un meme come se fosse una fonte scientifica."
+  
+  > "Ha sostenuto che i dinosauri sono stati inventati dalla NASA. Abbiamo chiamato un paleontologo."
+  
+  > e tanti altri... 
 
 - Pulsante: "Richiedi revisione"
 
@@ -143,6 +169,13 @@ Anawise assegna badge temporanei agli utenti in base al livello di "follia digit
 - 🚫 **Ignorantus Maximus** – Commenti multipli, logica assente
 - ⏳ **Analfabeta Digitale Temporaneo** – Badge a tempo: 48h senza scrivere nulla
 - 🪐 **Negazionista Galattico** – Per chi pensa che lo sbarco lunare sia fiction
+
+altre idee potrebbero essere:
+- 🥇 "Ha vinto il premio 'Pensatore Libero da Fonti Affidabili’"
+- 🧪 "Esperto in scienza alternativa, laureato su YouTube"
+- 🚫 "Bannato per eccesso di verità non verificata"
+- 🪐 "Astrofisico autodidatta: sostiene che la Luna è un proiettore"
+- 📵 "Ex utente. Attualmente in modalità 'offline cerebrale'"
 
 I badge sono visibili sul profilo con tooltips ironici, durano alcuni giorni e si possono perdere con buon comportamento.
 
