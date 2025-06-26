@@ -113,6 +113,10 @@
 - "Abbiamo fatto fact-checking. Il commento ha perso 3 a 0."
 - e tanti altri...
 
+Nota: Il sistema non si limiterà a rispondere in modo ironico e a nascondere il commento:
+verrà anche offerta la possibilità di visualizzare il commento nascosto tramite un pulsante "Mostra commento".
+Inoltre, sarà presente un pulsante "Mostra fonte", che indirizzerà l’utente verso fonti verificate e attendibili per approfondire in modo corretto l’argomento che ha causato l’intervento del sistema.
+
 ---
 
 ## 🔒 Blocco profili disinformativi
