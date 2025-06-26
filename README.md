@@ -123,11 +123,29 @@ Inoltre, sarà presente un pulsante "Mostra fonte", che indirizzerà l’utente 
 
 ### 🧱 1. Flagging automatico
 
-- Utenti che postano contenuti ripetutamente classificati come:
-  - Teorie infondate ("i vaccini hanno il 5G")
-  - Complottismo estremo ("non siamo mai andati sulla luna")
+Il sistema assegna un punteggio di disinformazione agli utenti che pubblicano contenuti problematici in modo ricorrente. Alcuni esempi di contenuti che possono attivare il blocco temporaneo o permanente includono:
 
-→ Ottengono un punteggio interno → profilazione
+- 🧪 Teorie infondate
+  - Es: "I vaccini contengono 5G", "non siamo mai andati sulla luna"
+
+- 🌀 Complottismo estremo
+  - Es: "La Terra è piatta", "le scie chimiche ci controllano la mente"
+
+- 🏛️ Disinformazione politica intenzionale
+  - Es: narrazioni manipolate, dati falsi, distorsione dei fatti per influenzare il pensiero politico
+
+- 📰 Propaganda o contenuti distorti
+  - Articoli o post creati con l’obiettivo di alimentare odio, divisioni sociali o manipolare l’opinione pubblica
+
+- 🧨 Titoli clickbait e fuorvianti
+  - Titoli sensazionalistici che travisano completamente il contenuto reale solo per ottenere visualizzazioni
+
+- 🧠 Contenuti creati con IA senza verifica
+  - Post generati da chatbot o modelli AI che riportano affermazioni false senza alcuna fonte
+
+- 🐛 Diffusione sistematica di fonti non attendibili
+  - Link ricorrenti verso siti già noti per disinformazione o bufale (es. siti bannati da fact-checker ufficiali)
+
 
 ### 🧩 2. Interfaccia del profilo bloccato
 
