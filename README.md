@@ -6,12 +6,12 @@
 
 ## 🚀 Stack Tecnologico
 
-- **Frontend Web**: React + Tailwind CSS
+- **Frontend Web**: React + Typescript + Tailwind CSS
 - **App Mobile**: React Native (Expo)
-- **Backend API**: Node.js + Express
+- **Backend API**: Node.js + Typescript + Express
 - **Database**: MongoDB
 - **AI/ML**: OpenAI API, ConspEmoLLM-v2, Loki (fact-checking), modelli personalizzati
-- **Deployment**: Docker, Vercel (frontend), Railway/Render (backend)
+- **Deployment**: Docker
 - **Moderazione**: Dashboard admin + API automatizzate
 
 ---
