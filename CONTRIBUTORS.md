@@ -5,7 +5,7 @@ Grazie a tutte le persone che hanno contribuito a rendere Anawise un progetto mi
 
 | Nome             | Ruolo / Contributo                              | Profilo                                |
 |------------------|-------------------------------------------------|----------------------------------------|
-| Antonio Galdiero | Founder, entrepreneur                           |                                        |
+| Antonio Galdiero | Founder,                                        |                                        |
 | Angelo Petrosino | Co-Founder, full-stack developer                |                                        |
 
 ---
