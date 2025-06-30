@@ -73,10 +73,54 @@ export const getCurrentUser = async (): Promise<User> => {
   return response.data.user;
 };
 
+/**
+ * Richiede il reset della password
+ * @param email Email dell'utente
+ * @returns Messaggio di conferma
+ */
+export const requestPasswordReset = async (email: string): Promise<{ message: string }> => {
+  const response = await axios.post('/auth/request-password-reset', { email });
+  return response.data;
+};
+
+/**
+ * Conferma il reset della password
+ * @param token Token di reset
+ * @param newPassword Nuova password
+ * @returns Messaggio di conferma
+ */
+export const resetPassword = async (token: string, newPassword: string): Promise<{ message: string }> => {
+  const response = await axios.post('/auth/reset-password', { token, newPassword });
+  return response.data;
+};
+
+/**
+ * Richiede la verifica dell'email
+ * @returns Messaggio di conferma
+ */
+export const requestEmailVerification = async (): Promise<{ message: string }> => {
+  const response = await axios.post('/auth/request-email-verification');
+  return response.data;
+};
+
+/**
+ * Verifica l'email
+ * @param token Token di verifica
+ * @returns Messaggio di conferma
+ */
+export const verifyEmail = async (token: string): Promise<{ message: string }> => {
+  const response = await axios.post('/auth/verify-email', { token });
+  return response.data;
+};
+
 export default {
   login,
   register,
   logout,
   refreshToken,
-  getCurrentUser
+  getCurrentUser,
+  requestPasswordReset,
+  resetPassword,
+  requestEmailVerification,
+  verifyEmail
 };

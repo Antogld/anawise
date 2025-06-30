@@ -1,48 +1,18 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import ResetPasswordForm from '../../components/auth/ResetPasswordForm';
 
 const ResetPassword: React.FC = () => {
-  const [email, setEmail] = useState('');
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Richiesta reset password per:', email);
-    // Implementazione futura per il reset della password
-    setSubmitted(true);
-  };
-
   return (
-    <div className="auth-container">
-      <h2>Recupera Password</h2>
-      
-      {!submitted ? (
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-          </div>
-          <p className="info-text">
-            Inserisci l'indirizzo email associato al tuo account. Ti invieremo un link per reimpostare la password.
-          </p>
-          <button type="submit">Invia link di recupero</button>
-        </form>
-      ) : (
-        <div className="success-message">
-          <p>
-            Se l'indirizzo email è associato a un account, riceverai a breve un'email con le istruzioni per reimpostare la password.
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-md w-full space-y-8">
+        <div>
+          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Reimposta la tua password</h2>
+          <p className="mt-2 text-center text-sm text-gray-600">
+            Inserisci una nuova password per il tuo account
           </p>
         </div>
-      )}
-      
-      <div className="auth-links">
-        <Link to="/auth/login">Torna al login</Link>
+        
+        <ResetPasswordForm />
       </div>
     </div>
   );

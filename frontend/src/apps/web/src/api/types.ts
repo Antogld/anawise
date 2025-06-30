@@ -4,6 +4,7 @@ export interface User {
   _id: string;
   name: string;
   email: string;
+  emailVerified: boolean;
   avatarUrl?: string;
   bio?: string;
   createdAt: string;
@@ -55,4 +56,10 @@ export interface PaginatedResponse<T> {
   page: number;
   pages: number;
   data: T[];
+}
+
+export interface ApiError {
+  status?: number;
+  message: string;
+  errors?: Record<string, string[]>;
 }

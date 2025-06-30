@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { Login, SignUp, ResetPassword } from '../pages/auth';
+import { Login, SignUp, ResetPassword, ForgotPassword, VerifyEmail } from '../pages/auth';
 import Dashboard from '../pages/dashboard';
 import ProtectedRoute from '../components/auth/ProtectedRoute';
 
@@ -12,7 +12,9 @@ export const AppRoutes: React.FC = () => {
       {/* Rotte pubbliche */}
       <Route path="/auth/login" element={<Login />} />
       <Route path="/auth/signup" element={<SignUp />} />
+      <Route path="/auth/forgot-password" element={<ForgotPassword />} />
       <Route path="/auth/reset-password" element={<ResetPassword />} />
+      <Route path="/auth/verify-email" element={<VerifyEmail />} />
       
       {/* Rotte protette */}
       <Route path="/" element={<ProtectedRoute redirectPath="/auth/login"><Dashboard /></ProtectedRoute>} />
