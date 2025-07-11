@@ -1,66 +1,29 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import RegisterForm from '../../components/auth/RegisterForm';
 
 const SignUp: React.FC = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Registrazione con:', { name, email, password });
-    // Implementazione futura per la registrazione
-  };
-
   return (
-    <div className="auth-container">
-      <h2>Registrati</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="name">Nome completo</label>
-          <input
-            type="text"
-            id="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
-          />
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-md w-full space-y-8">
+        <div>
+          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Crea il tuo account</h2>
+          <p className="mt-2 text-center text-sm text-gray-600">
+            Unisciti alla nostra community
+          </p>
         </div>
-        <div className="form-group">
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
+        
+        {/* Utilizziamo il componente RegisterForm che gestisce la registrazione */}
+        <RegisterForm />
+        
+        <div className="text-center mt-4">
+          <p className="text-sm text-gray-600">
+            Hai già un account?{' '}
+            <Link to="/auth/login" className="font-medium text-blue-600 hover:text-blue-500">
+              Accedi
+            </Link>
+          </p>
         </div>
-        <div className="form-group">
-          <label htmlFor="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="confirmPassword">Conferma Password</label>
-          <input
-            type="password"
-            id="confirmPassword"
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
-            required
-          />
-        </div>
-        <button type="submit">Registrati</button>
-      </form>
-      <div className="auth-links">
-        <Link to="/auth/login">Hai già un account? Accedi</Link>
       </div>
     </div>
   );

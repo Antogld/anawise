@@ -1,45 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import LoginForm from '../../components/auth/LoginForm';
 
 const Login: React.FC = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Login con:', { email, password });
-    // Implementazione futura per l'autenticazione
-  };
-
   return (
-    <div className="auth-container">
-      <h2>Accedi</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-md w-full space-y-8">
+        <div>
+          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Accedi al tuo account</h2>
         </div>
-        <div className="form-group">
-          <label htmlFor="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
+        
+        {/* Utilizziamo il componente LoginForm che gestisce l'autenticazione */}
+        <LoginForm />
+        
+        <div className="text-center mt-4">
+          <p className="text-sm text-gray-600">
+            Non hai un account?{' '}
+            <Link to="/auth/signup" className="font-medium text-blue-600 hover:text-blue-500">
+              Registrati ora
+            </Link>
+          </p>
         </div>
-        <button type="submit">Accedi</button>
-      </form>
-      <div className="auth-links">
-        <Link to="/auth/signup">Non hai un account? Registrati</Link>
-        <Link to="/auth/reset-password">Password dimenticata?</Link>
       </div>
     </div>
   );
