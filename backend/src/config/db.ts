@@ -28,4 +28,4 @@ export const connectDB = async (): Promise<void> => {
   }
 };
 
-export default connectDB;
+// Esportiamo solo la funzione con nome

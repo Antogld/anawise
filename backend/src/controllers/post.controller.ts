@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
-import Post, { IPost } from '../models/post.model';
-import { AppError } from '../middleware/error.middleware';
+import Post, { IPost } from '../models/post.model.js';
+import { AppError } from '../middleware/error.middleware.js';
 
 /**
  * @desc    Ottieni tutti i post

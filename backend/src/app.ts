@@ -5,11 +5,11 @@ import helmet from 'helmet';
 import dotenv from 'dotenv';
 
 // Importa le rotte
-import authRoutes from './src/routes/auth.routes';
-import postRoutes from './src/routes/post.routes';
+import authRoutes from './routes/auth.routes.js';
+import postRoutes from './routes/post.routes.js';
 
 // Importa i middleware per la gestione degli errori
-import { errorHandler, notFound } from './src/middleware/error.middleware';
+import { errorHandler, notFound } from './middleware/error.middleware.js';
 
 // Carica le variabili d'ambiente
 dotenv.config();

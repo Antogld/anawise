@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
-import User, { IUser } from '../models/user.model';
-import { generateAccessToken, generateRefreshToken, verifyRefreshToken } from '../utils/token.util';
-import { AppError } from '../middleware/error.middleware';
+import User, { IUser } from '../models/user.model.js';
+import { generateAccessToken, generateRefreshToken, verifyRefreshToken } from '../utils/token.util.js';
+import { AppError } from '../middleware/error.middleware.js';
 
 /**
  * @desc    Registra un nuovo utente

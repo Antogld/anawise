@@ -1,15 +1,23 @@
 {
   "name": "anawise-social-api",
   "version": "1.0.0",
+  "type": "module",
   "description": "REST API per un social network simile a Instagram/Facebook",
   "main": "dist/server.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "dev": "tsx watch src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
     "lint": "eslint ."
   },
-  "keywords": ["social", "network", "api", "rest", "express", "mongodb"],
+  "keywords": [
+    "social",
+    "network",
+    "api",
+    "rest",
+    "express",
+    "mongodb"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -32,6 +40,7 @@
     "@types/node": "^20.10.5",
     "eslint": "^8.56.0",
     "ts-node-dev": "^2.0.0",
+    "tsx": "^4.20.3",
     "typescript": "^5.3.3"
   }
 }

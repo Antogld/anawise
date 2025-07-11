@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import { verifyAccessToken } from '../utils/token.util';
+import { verifyAccessToken } from '../utils/token.util.js';
 
 /**
  * Estende l'interfaccia Request per includere l'utente autenticato

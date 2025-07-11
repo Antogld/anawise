@@ -7,8 +7,8 @@ import {
   deletePost, 
   toggleLike, 
   addComment 
-} from '../controllers/post.controller';
-import { protect } from '../middleware/auth.middleware';
+} from '../controllers/post.controller.js';
+import { protect } from '../middleware/auth.middleware.js';
 
 const router = Router();
 
