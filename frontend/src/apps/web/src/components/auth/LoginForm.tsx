@@ -1,7 +1,7 @@
 // src/apps/web/src/components/auth/LoginForm.tsx
 import React, { useState } from 'react';
 import { useAuth } from '../../hooks/useAuth';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const LoginForm: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -86,12 +86,12 @@ const LoginForm: React.FC = () => {
         </div>
         
         <div className="text-center mt-4">
-          <a
-            href="/register"
+          <Link
+            to="/register"
             className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
           >
             Non hai un account? Registrati
-          </a>
+          </Link>
         </div>
       </form>
     </div>
